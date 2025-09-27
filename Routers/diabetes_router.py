@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from Schemas.patient_data import PatientData
-from Services.diabetes_service import PredictionDiabetes
-from Utils.config import settings
+from schemas.patient_data import PatientData
+from services.diabetes_service import PredictionDiabetes
+from utils.config import settings
 
 router = APIRouter(
     prefix=settings.path_router,

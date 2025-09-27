@@ -1,8 +1,8 @@
-from Schemas.patient_data import PatientData
+from schemas.patient_data import PatientData
 import pickle
 import numpy as np
 
-with open("./Resources/RFDiabetesv132.pkl",'rb') as file:
+with open("./resources/RFDiabetesv132.pkl",'rb') as file:
     model = pickle.load(file)
 
 labels = ["Sano", "Enfermo"]

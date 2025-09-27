@@ -1,7 +1,7 @@
 
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
-from Routers import diabetes_router
+from routers import diabetes_router
 
 app = FastAPI()
 app.include_router(diabetes_router.router)
